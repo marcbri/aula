@@ -1,0 +1,43 @@
+#Estrutura de Decisão e Repetição
+1) salario = float(input("Digite o salário do colaborador: "))
+if salario <= 280:
+  percentual = 20
+elif salario <= 700:
+  percentual = 15
+elif salario <= 1500:
+  percentual = 10
+else:
+  percentual = 5
+aumento = salario * percentual / 100
+novo_salario = salario + aumento
+
+print("Salário antes do reajuste: R$ {:.2f}".format(salario))
+print("Percentual de aumento aplicado: {}%".format(percentual))
+print("Valor do aumento: R$ {:.2f}".format(aumento))
+print("Novo salário, após o aumento: R$ {:.2f}".format(novo_salario))
+
+
+
+
+
+#Estrutura de Decisão e repetição
+2) nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+media = (nota1 + nota2) / 2
+if media >= 9.0:
+  conceito = "A"
+elif media >= 7.5:
+  conceito = "B"
+elif media >= 6.0:
+  conceito = "C"
+elif media >= 4.0:
+  conceito = "D
+
+#Funções: 
+3) def_soma3 (parcela1, parcela2, parcela3):
+          return(parcela1 + parcela2 + parcela3)
+numero1 = int(input("informe um número: "))
+numero2 = int(input("informe um número: "))
+numero3 = int(input("informe um número: "))
+print (f" a soma dos 3 números é: {numero1} + {numero2} +{numero3"} 
+
