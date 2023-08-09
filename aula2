@@ -1,0 +1,74 @@
+#1- NUMEROS = 20
+inteiros = []
+pares = []
+impares = []
+
+for i in range(NUMEROS):
+    numero = int(input("Digite um inteiro: "))
+    inteiros.append(numero)
+    if numero % 2 == 0:
+        pares.append(numero)
+    else:
+        impares.append(numero)
+
+
+print("\nInteiros")
+for numero in inteiros:
+    print(f"{numero}", end=" ")
+
+print("\nPares")
+for numero in pares:
+    print(f"{numero}", end=" ")
+
+print("\nImpares")
+for numero in impares:
+    print(f"{numero}", end=" ")
+2-numeros = []
+
+i = 0
+
+while len(numeros) !=5:
+    i +=1
+    print("Diga o número " + str(i) +"º:")
+    try:
+        numero =int(input())
+    except:
+        print("Numero inválido.")
+        i -=1
+        continue
+    numeros.append(numero)
+
+print("Números: " + ",".join(str(numero) for numero in numeros))
+
+soma = sum(numeros)
+print("Soma: " + str(soma))
+
+multiplicacao =1
+for numero in numeros:
+      multiplicacao = multiplicacao * numero
+
+print("Multiplicação: " + str(multiplicacao))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
