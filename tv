@@ -1,0 +1,53 @@
+class TV:
+    def __init__(self):
+        self.power = False
+        self.channel = 1
+        self.volume = 50
+    
+    def power_on(self):
+        self.power = True
+    
+    def power_off(self):
+        self.power = False
+    
+    def change_channel_up(self):
+        if self.power:
+            self.channel += 1
+    
+    def change_channel_down(self):
+        if self.power and self.channel > 1:
+            self.channel -= 1
+    
+    def increase_volume(self):
+        if self.power and self.volume < 100:
+            self.volume += 1
+    
+    def decrease_volume(self):
+        if self.power and self.volume > 0:
+            self.volume -= 1
+
+# Usage
+tv = TV()
+
+while True:
+    button = input("Enter a button number (0-9): ")
+    
+    if button == '5':
+        tv.power_on()
+    elif button == '0':
+        tv.power_off()
+    elif button == '8':
+        tv.change_channel_up()
+    elif button == '2':
+        tv.change_channel_down()
+    elif button == '7':
+        tv.increase_volume()
+    elif button == '1':
+        tv.decrease_volume()
+    
+    print("Power:", tv.power)
+    print("Channel:", tv.channel)
+    print("Volume:", tv.volume)
+    
+    if not tv.power:
+        break
